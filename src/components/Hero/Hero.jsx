@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import HeroImg from "../../assets/bradleyhypox.png";
+import HeroImg from "../../assets/hugues.jpg";
 import Circle from "../../assets/red.webp";
 import Wall from "../../assets/wall.jpg";
 import { animate, delay, motion } from "framer-motion";
@@ -41,10 +41,10 @@ const Hero = () => {
             <div className="text-center md:text-left space-y-6">
               <motion.p variants={slideUp(0.3)} initial="initial" animate="animate" className="text-4xl">Hello, Je suis</motion.p>
               <motion.p variants={slideUp(0.5)} initial="initial" animate="animate" className="text-5xl lg:text-8xl font-Satisfy text-outline">
-                Bradley Hypox
+                hugues medegnom
               </motion.p>
               <motion.p variants={slideUp(0.7)} initial="initial" animate="animate" className="text-xl leading-snug">
-              Créateur de solutions audacieuses, je suis un développeur passionné par l’innovation et l’excellence. Porté par une curiosité insatiable et une créativité affirmée, je transforme les idées en expériences numériques percutantes. Mon moteur ? Repousser les limites, sublimer chaque projet et laisser une empreinte durable dans le monde du développement.
+              Architecte des données et créateur de sens, je suis un passionné de la Data Science animé par la quête de vérité à travers les chiffres. À la croisée de l’analyse, de la visualisation et de l’IA, je transforme des données brutes en décisions éclairées. Curieux, rigoureux et créatif, je conçois des solutions intelligentes qui donnent vie aux données et impactent le réel. Mon ambition ? Extraire la valeur cachée et façonner un monde guidé par l’insight.
               </motion.p>
               <motion.button variants={slideUp(0.9)} initial="initial" animate="animate" className="btn">Know More</motion.button>
               {/* Stats Section */}
