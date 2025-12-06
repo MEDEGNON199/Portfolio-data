@@ -27,11 +27,11 @@ const Banner = () => {
                     <motion.h1 variants={slideUp(0.3)} initial="initial" animate="animate" className='text-3xl lg:text-4xl font-bold'>Je suis un Data Scientist & Analyst</motion.h1>
                     <motion.p variants={slideUp(0.5)} initial="initial" animate="animate" className='text-white/70'>Curieux et rigoureux, je transforme les données en leviers de décision stratégique. De la collecte à la visualisation, j’exploite la puissance des algorithmes et de l’analyse statistique pour révéler des insights clairs, concrets et à fort impact. Mon objectif : faire parler les données pour éclairer l’avenir.</motion.p>
                     <div className='flex items-center gap-4'>
-                        <motion.button variants={slideUp(0.7)} initial="initial" animate="animate" className='btn text-xs py-3 md:text-base'>Know more</motion.button>
+                        <motion.button variants={slideUp(0.7)} initial="initial" animate="animate" className='btn text-xs py-3 md:text-base'>En savoir plus</motion.button>
                         <a href="./cv.pdf">
                         <motion.button variants={slideUp(0.9)} initial="initial" animate="animate" className='border border-white/50 rounded-lg px-4  text-xs md:text-base flex items-center gap-2 py-3  '>
                             <FiDownload/>
-                            Download CV
+                            Télecharger CV
                         </motion.button>
                         </a>
                     </div>
