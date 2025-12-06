@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Project1 from "../../assets/PayPal-site.png";
+import Project1 from "../../assets/ventteleph.jpg";
 import Project2 from "../../assets/caurispay.png";
 import Project3 from "../../assets/facebook.png";
 import Project4 from "../../assets/register.png";
@@ -21,13 +21,13 @@ import "slick-carousel/slick/slick-theme.css";
 const ProjetsData = [
     {
         id:1,
-        title :"PayPal",
+        title :"Techstore-Template",
         link: "#",
-        desc : "Conception d'une interface moderne et réactive pour PayPal, mettant en avant la simothèque, les services financiers et les offres promotionnelles. Le site est conçu pour une expérience utilisateur optimale, facilitant la navigation entre les différents produits et la gestion du compte client. Il allie un design épuré et professionnel à des fonctionnalités robustes comme la consultation des soldes et le paiement en ligne sécurisé",
+        desc : "Conception d’une interface moderne et réactive dédiée à la vente d’AirPods, mettant en avant les différents modèles, leurs caractéristiques techniques, ainsi que les offres promotionnelles en cours. Le site est conçu pour offrir une expérience utilisateur fluide et intuitive, facilitant la navigation entre les produits, la comparaison des modèles et la gestion du panier. Il combine un design épuré et attractif à des fonctionnalités performantes telles que le paiement en ligne sécurisé, le suivi des commandes et la gestion du compte client.",
         delay : 1.2,
         img : Project1,
-        lien1:"https://newsitepay.vercel.app/",
-        lien2:"https://github.com/hippolite-oss"
+        lien1:"https://vente-airpods.web.app/",
+        lien2:"https://github.com/MEDEGNON199"
 
     },
   
