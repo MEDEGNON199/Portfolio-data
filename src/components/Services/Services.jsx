@@ -76,12 +76,12 @@ const Services = () => {
                         <motion.h1 variants={slideUp(0.3)} initial="initial" animate="animate" className='text-3xl lg:text-4xl font-bold'>Services</motion.h1>
                         <motion.p variants={slideUp(0.5)} initial="initial" animate="animate" className='text-white/70 text-xl'>Je développe des solutions web et des outils analytiques intégrant des modèles de Machine Learning et des pipelines de données optimisés, permettant de transformer les données brutes en insights exploitables et en applications intelligentes adaptées aux besoins des entreprises</motion.p>
                         <div className='flex items-center gap-4'>
-                            <motion.button variants={slideUp(0.7)} initial="initial" animate="animate" className=' text-primary rounded font-bold px-5  !bg-white text-xs py-3 md:text-base hover:red-shadow'>Know more</motion.button>
+                            <motion.button variants={slideUp(0.7)} initial="initial" animate="animate" className=' text-primary rounded font-bold px-5  !bg-white text-xs py-3 md:text-base hover:red-shadow'>En savoir plus</motion.button>
                            
                             <a href="./cv_hugues.pdf">
                             <motion.button variants={slideUp(0.9)} initial="initial" animate="animate" className='border border-white/50 rounded-lg px-4  text-xs md:text-base flex items-center gap-2 py-3  '>
                                 <FiDownload/>
-                                Download CV
+                                Telecharger CV
                             </motion.button>
                             </a>
                         </div>

@@ -21,7 +21,7 @@ const ResponsiveMenu = ({ showMenu }) => {
       {/* Menu footer section */}
       <div className='-mt-64'>
         <p>
-          Made with 💖 by <a href="/">Bradley Hypox</a>
+          Made with 💖 by <a href="/">Medegnon Hugues</a>
         </p>
       </div>
     </div>

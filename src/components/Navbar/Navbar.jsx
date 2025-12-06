@@ -73,7 +73,7 @@ const Navbar = () => {
               );
             })}
             <button className="btn">
-              <a href="./cv.pdf">Get Resume</a>
+              <a href="./cv_hugues.pdf">Get Resume</a>
             </button>
           </ul>
         </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import HeroImg from "../../assets/hugues.jpg";
 import Circle from "../../assets/red.webp";
 import Wall from "../../assets/wall.jpg";
-import { animate, delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import CountUp from "react-countup";
 
 const wallBackground = {
@@ -14,24 +14,31 @@ const wallBackground = {
   backgroundRepeat: "no-repeat",
 };
 
-export const slideUp = (delay) =>{
+export const slideUp = (delay) => {
   return {
     initial: {
-      y:50,
-      opacity :0,
+      y: 50,
+      opacity: 0,
     },
-    animate : {
-      y:0,
-      opacity :1,
-      transition : {
-        duration : 0.5,
-        delay : delay,
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: delay,
       },
     },
   };
-}
+};
 
 const Hero = () => {
+  const handleScrollToServices = () => {
+    const section = document.getElementById("services");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section style={wallBackground} className="bg-black text-white mt-20">
       <div className="bg-gradient-to-b from-primary/50 to-black">
@@ -39,42 +46,95 @@ const Hero = () => {
           {/* brand info */}
           <div className="flex flex-col justify-center md:text-left py-14 md:py-0">
             <div className="text-center md:text-left space-y-6">
-              <motion.p variants={slideUp(0.3)} initial="initial" animate="animate" className="text-4xl">Hello, Je suis</motion.p>
-              <motion.p variants={slideUp(0.5)} initial="initial" animate="animate" className="text-5xl lg:text-8xl font-Satisfy text-outline">
+              <motion.p
+                variants={slideUp(0.3)}
+                initial="initial"
+                animate="animate"
+                className="text-4xl"
+              >
+                Hello, Je suis
+              </motion.p>
+              <motion.p
+                variants={slideUp(0.5)}
+                initial="initial"
+                animate="animate"
+                className="text-5xl lg:text-8xl font-Satisfy text-outline"
+              >
                 hugues medegnom
               </motion.p>
-              <motion.p variants={slideUp(0.7)} initial="initial" animate="animate" className="text-xl leading-snug">
-              Architecte des données et créateur de sens, je suis un passionné de la Data Science animé par la quête de vérité à travers les chiffres. À la croisée de l’analyse, de la visualisation et de l’IA, je transforme des données brutes en décisions éclairées. Curieux, rigoureux et créatif, je conçois des solutions intelligentes qui donnent vie aux données et impactent le réel. Mon ambition ? Extraire la valeur cachée et façonner un monde guidé par l’insight.
+              <motion.p
+                variants={slideUp(0.7)}
+                initial="initial"
+                animate="animate"
+                className="text-xl leading-snug"
+              >
+                Architecte des données et créateur de sens, je suis un passionné
+                de la Data Science animé par la quête de vérité à travers les chiffres.
+                À la croisée de l’analyse, de la visualisation et de l’IA, je transforme
+                des données brutes en décisions éclairées. Curieux, rigoureux et créatif,
+                je conçois des solutions intelligentes qui donnent vie aux données et impactent
+                le réel. Mon ambition ? Extraire la valeur cachée et façonner un monde guidé
+                par l’insight.
               </motion.p>
-              <motion.button variants={slideUp(0.9)} initial="initial" animate="animate" className="btn">Know More</motion.button>
+
+              {/* Bouton En savoir plus */}
+              <motion.button
+                variants={slideUp(0.9)}
+                initial="initial"
+                animate="animate"
+                className="btn"
+                onClick={handleScrollToServices}
+              >
+                En savoir plus
+              </motion.button>
+
               {/* Stats Section */}
-              <motion.div variants={slideUp(1.1)} initial="initial" animate="animate"  className="flex justify-around bg-gradient-to-b from-primary/50 to-black border-2 border-primary/80 rounded-xl hover:red-shadow hover:scale-105 md:max-w-[400px] !mt-[44px] p-4">
+              <motion.div
+                variants={slideUp(1.1)}
+                initial="initial"
+                animate="animate"
+                className="flex justify-around bg-gradient-to-b from-primary/50 to-black border-2 border-primary/80 rounded-xl hover:red-shadow hover:scale-105 md:max-w-[400px] !mt-[44px] p-4"
+              >
                 <div className="flex flex-col items-center gap-2">
                   <p className="text-2xl font-bold">
-                    <CountUp end={3} start={0} suffix="+" delay={1.4}  />
+                    <CountUp end={3} start={0} suffix="+" delay={1.4} />
                   </p>
                   <p className="text-xl">Experience</p>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                   <p className="text-2xl font-bold">
-                    <CountUp end={20} start={0} suffix="+" delay={1.4} />
+                    <CountUp end={10} start={0} suffix="+" delay={1.4} />
                   </p>
                   <p className="text-xl">Projects</p>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                   <p className="text-2xl font-bold">
-                    <CountUp end={10} start={0} suffix="+" delay={1.4} />
+                    <CountUp end={2} start={0} suffix="+" delay={1.4} />
                   </p>
                   <p className="text-xl">Clients</p>
                 </div>
               </motion.div>
             </div>
           </div>
+
           {/* Hero Image */}
-          <motion.div initial={{ opacity: 0}} animate= {{ opacity:1}} transition={{ duration : 0.8, delay: 0.5}} className="flex justify-center md:justify-end items-center relative">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="flex justify-center md:justify-end items-center relative"
+          >
             <div className=" bg-black rounded-3xl overflow-hidden h-[500px] flex items-end relative group hover:red-shadow hover:scale-105 duration-700 ">
-                <Image src={Circle} alt="circle" className=" absolute top-4 -left-0 -z-0 animate-spin-superslow group-hover:animate-pulse duration-300"/>
-                <Image src={HeroImg} alt="Heroimg" className="w-[300px] relative z-10 group-hover:scale-90 duration-700"/>
+              <Image
+                src={Circle}
+                alt="circle"
+                className=" absolute top-4 -left-0 -z-0 animate-spin-superslow group-hover:animate-pulse duration-300"
+              />
+              <Image
+                src={HeroImg}
+                alt="Heroimg"
+                className="w-[300px] relative z-10 group-hover:scale-90 duration-700"
+              />
             </div>
           </motion.div>
         </div>
