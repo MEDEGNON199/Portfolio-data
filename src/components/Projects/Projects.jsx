@@ -7,7 +7,7 @@ import Project2 from "../../assets/data.jpg";
 import Project3 from "../../assets/data2.jpg";
 import Project4 from "../../assets/data3.png";
 import Project5 from "../../assets/todolist.png";
-import Project6 from "../../assets/uatmGasa.png";
+import Project6 from "../../assets/dat.png";
 import Project7 from "../../assets/caurispay.png";
 
 
