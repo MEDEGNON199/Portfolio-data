@@ -5,10 +5,10 @@ import Image from 'next/image';
 import Project1 from "../../assets/ventteleph.jpg";
 import Project2 from "../../assets/data.jpg";
 import Project3 from "../../assets/data2.jpg";
-import Project4 from "../../assets/register.png";
+import Project4 from "../../assets/data3.png";
 import Project5 from "../../assets/todolist.png";
 import Project6 from "../../assets/uatmGasa.png";
-import Project7 from "../../assets/grayC.png";
+import Project7 from "../../assets/caurispay.png";
 
 
 
@@ -47,7 +47,7 @@ const ProjetsData = [
         id:3,
         title :"Rapport financier",
         link: "#",
-        desc : "Raport et structuration d’un dataset médical dédié aux maladies cardiaques, mettant en avant les données cliniques essentielles telles que les antécédents des patients, les paramètres biologiques, les examens cardiologiques et les facteurs de risque. Le dataset est conçu pour garantir une exploitation optimale des données, facilitant l’analyse, la recherche médicale et le développement de modèles de prédiction. Il allie une organisation rigoureuse des informations à des exigences strictes en matière de confidentialité, de sécurité et de conformité aux normes de protection des données de santé.",
+        desc : "Ce tableau de bord interactif présente un résumé exécutif des performances financières, incluant l'évolution du profit mensuel, les zones géographiques les plus rentables, et une analyse des ventes par produit et segment de marché. Il a été conçu avec Power BI pour offrir une visualisation claire et stratégique des données, facilitant la prise de décision en entreprise",
         delay : 2,
         img : Project3,
         lien1:"https://github.com/MEDEGNON199/Rapport-financier.git",
@@ -57,9 +57,9 @@ const ProjetsData = [
     },
     {
         id:4,
-        title :"Register",
+        title :"Dashboard Clients",
         link: "#",
-        desc : "Conception d'un formulaire d'inscription moderne, animé et élégant pour une expérience utilisateur exceptionnelle. Doté de micro-interactions fluides et de transitions subtiles qui guident et engagent l'utilisateur à chaque étape. Le design minimaliste met l'accent sur la simplicité et l'accessibilité, tout en offrant une validation visuelle instantanée. Une solution à la fois esthétique et fonctionnelle pour maximiser le taux de conversion.",
+        desc : "Ce tableau de bord fournit des insights clés sur nos clients, en identifiant les segments les plus performants et leurs comportements d’achat. Il met en évidence les catégories les plus génératrices de ventes, les régions où se concentrent nos clients, ainsi que les facteurs influençant positivement le chiffre d’affaires — notamment la performance du marché APAC. Conçu avec Power BI, cet outil permet d’orienter les actions commerciales et marketing de manière ciblée.",
         delay : 2,
         img : Project4,
         lien1:"https://register-seven-delta.vercel.app/",
@@ -93,12 +93,12 @@ const ProjetsData = [
     },
     {
         id:7,
-        title :"Cauris-PayGray",
+        title :"CaurisPay",
         link: "#",
-        desc : "Création d'une plateforme financière moderne et intuitive pour CaurisPay, réalisée avec un template gris, centralisant les services de paiement, transfert d'argent et paiement de factures. Conçue pour une expérience utilisateur fluide et sécurisée, elle combine un design épuré à des fonctionnalités robustes comme le portefeuille électronique et le suivi des transactions. L'interface responsive garantit une gestion simplifiée des finances depuis mobile ou ordinateur.",
+        desc : "Création d'une plateforme financière moderne et intuitive pour CaurisPay, centralisant les services de paiement, transfert d'argent et paiement de factures. Conçue pour une expérience utilisateur fluide et sécurisée, elle combine un design épuré à des fonctionnalités robustes comme le portefeuille électronique et le suivi des transactions. L'interface responsive garantit une gestion simplifiée des finances depuis mobile ou ordinateur.",
         delay : 2,
         img : Project7,
-        lien1:"https://cauris-pay-gray.vercel.app/",
+        lien1:"https://cauris-pay-sooty.vercel.app/",
         lien2:"https://github.com/hippolite-oss"
 
         
