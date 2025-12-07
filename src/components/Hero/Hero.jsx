@@ -60,7 +60,7 @@ const Hero = () => {
                 animate="animate"
                 className="text-5xl lg:text-8xl font-Satisfy text-outline"
               >
-                hugues medegnom
+                hugues medegnon
               </motion.p>
               <motion.p
                 variants={slideUp(0.7)}

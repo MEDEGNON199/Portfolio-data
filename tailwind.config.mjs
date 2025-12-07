@@ -1,4 +1,3 @@
-js
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -6,14 +5,17 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     extend: {
       fontFamily: {
-        "Satisfy": ["Satisfy", "cursive"],
+        Satisfy: ["Satisfy", "cursive"],
       },
+
       colors: {
         primary: "#f50b0a",
       },
+
       container: {
         center: true,
         padding: {
@@ -23,10 +25,12 @@ export default {
           "2xl": "6rem",
         },
       },
+
       animation: {
         "spin-superslow": "spin 1s linear infinite",
         rocket: "rocket 3s linear infinite",
       },
+
       keyframes: {
         rocket: {
           "0%, 100%": {
@@ -39,6 +43,6 @@ export default {
       },
     },
   },
+
   plugins: [],
 };
-
