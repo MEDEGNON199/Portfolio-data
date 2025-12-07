@@ -3,8 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Project1 from "../../assets/ventteleph.jpg";
-import Project2 from "../../assets/caurispay.png";
-import Project3 from "../../assets/facebook.png";
+import Project2 from "../../assets/data.jpg";
+import Project3 from "../../assets/data2.jpg";
 import Project4 from "../../assets/register.png";
 import Project5 from "../../assets/todolist.png";
 import Project6 from "../../assets/uatmGasa.png";
@@ -33,25 +33,25 @@ const ProjetsData = [
   
     {
         id:2,
-        title :"CaurisPay",
+        title :"rapport Analyse cardiarque",
         link: "#",
-        desc : "Création d'une plateforme financière moderne et intuitive pour CaurisPay, centralisant les services de paiement, transfert d'argent et paiement de factures. Conçue pour une expérience utilisateur fluide et sécurisée, elle combine un design épuré à des fonctionnalités robustes comme le portefeuille électronique et le suivi des transactions. L'interface responsive garantit une gestion simplifiée des finances depuis mobile ou ordinateur.",
+        desc : "Conception et structuration d’un dataset médical dédié aux maladies cardiaques, mettant en avant les données cliniques essentielles telles que les antécédents des patients, les paramètres biologiques, les examens cardiologiques et les facteurs de risque. Le dataset est conçu pour garantir une exploitation optimale des données, facilitant l’analyse, la recherche médicale et le développement de modèles de prédiction. Il allie une organisation rigoureuse des informations à des exigences strictes en matière de confidentialité, de sécurité et de conformité aux normes de protection des données de santé.",
         delay : 1.6,
         img : Project2,
-        lien1: "https://cauris-pay-sooty.vercel.app/",
-        lien2:"https://github.com/hippolite-oss"
+        lien1: "https://github.com/MEDEGNON199/Analysecardiaque.git",
+        lien2:"https://github.com/MEDEGNON199/Analysecardiaque.git"
     },
 
 
     {
         id:3,
-        title :"Facebook-Register",
+        title :"Rapport financier",
         link: "#",
         desc : "Conception d'une interface de connexion et d'inscription inspirée de Facebook, alliant simplicité et efficacité. Le formulaire intuitif guide l'utilisateur pas à pas, que ce soit pour accéder à son compte ou créer un nouveau profil. Il intègre les éléments visuels caractéristiques comme les champs bien distincts, le bouton d'action prominent et le lien de récupération de mot de passe. Conçu pour être responsive, il offre une expérience utilisateur fluide et sécurisée sur tous les appareils.",
         delay : 2,
         img : Project3,
-        lien1:"https://facebook-form-five.vercel.app/",
-        lien2:"https://github.com/hippolite-oss"
+        lien1:"https://github.com/MEDEGNON199/Rapport-financier.git",
+        lien2:"https://github.com/MEDEGNON199/Rapport-financier.git"
 
         
     },
