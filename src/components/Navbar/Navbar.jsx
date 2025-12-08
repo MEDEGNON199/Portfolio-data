@@ -8,9 +8,9 @@ import Link from 'next/link';
 
 export const NavLinks = [
     { id: 1, title: "Home", link : "/" },
-    { id: 2, title: "Contact", link : "/contact" },
-    { id: 3, title: "Projects", link : "/projects" },
     { id: 4, title: "Services", link : "/services" },
+    { id: 3, title: "Projects", link : "/projects" },
+    { id: 2, title: "Contact", link : "/contact" },
 ];
 
 const Navbar = () => {
@@ -50,7 +50,7 @@ const Navbar = () => {
           <Link href="/">
             <div className="flex items-center">
               <div className="h-[40px] w-[40px] flex justify-center items-center bg-primary text-white rounded-full text-3xl font-bold">P</div>
-              <h1 className="text-3xl font-bold text-wh">ortfolio</h1>
+              <h1 className="text-3xl font-bold text-wh">portfolio</h1>
             </div>
           </Link>
         </div>
